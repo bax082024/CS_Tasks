@@ -17,34 +17,46 @@ public class Fundament : IFundament
 
     public string GetAInterestingFact(string fact)
     {
-        throw new NotImplementedException();
+        return $"Interesting fact: {fact}";
     }
 
-    public void SumTwoNumbers()
+    public void SumTwoNumbers(double a, double b)
     {
-        throw new NotImplementedException();
+        double sum = a + b ;
+        Console.WriteLine($"The sum of {a} + {b} is {sum}");
     }
 
     public double SumTwoNumbersOfGivenType(double a, double b)
     {
-        throw new NotImplementedException();
+        return a + b ;
     }
 
 
     // Extra challenges
 
-    public void PrintFibonnaciSeries()
+    public void PrintFibonnaciSeries(int n)
     {
         // TODO: Implement the Fibonacci sequence
         int a = 0;
         int b = 1;
         int c;
 
-        
+        if (n > 0)
+        {
+            Console.WriteLine(a);
+        }
+        if (n > 1)
+        {
+            Console.WriteLine(b);
+        }
+
+        for (int i = 2; i< n; i++)
+        { 
         c = a + b;
+        Console.WriteLine(c);
         a = b;
         b = c;
-        
+        }
     }
 
     public string ReverseString(string str)
