@@ -1,8 +1,18 @@
+
+
 public class Fundament : IFundament
 {
     public void CheckOddOrEven(double a)
     {
-        throw new NotImplementedException();
+        if (a % 2 == 0)
+        {
+            Console.WriteLine($"{a} is even");
+        }
+        else 
+        {
+            Console.WriteLine($"{a} is odd");
+        }
+
     }
 
     public string GetAInterestingFact(string fact)

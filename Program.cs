@@ -1,4 +1,7 @@
-﻿namespace CS_Tests;
+﻿
+
+
+namespace CS_Tests;
 
 class Program
 {
