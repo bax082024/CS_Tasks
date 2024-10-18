@@ -12,4 +12,7 @@ public interface IGreetings
     void DecirHola();
     // japanese greeting
     void YoiTsuitachi();
+    // Bergen greeting
+    void Hallaien();
+
 }

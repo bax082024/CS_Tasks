@@ -37,4 +37,12 @@ public class Greetings : IGreetings
     {
         Console.WriteLine("Konichiwa!");
     }
+
+    /// <summary>
+    /// Short greeting from Bergen!
+    /// </summary>
+    public void Hallaien()
+    {
+        Console.WriteLine("Hallaien!");
+    }
 }
