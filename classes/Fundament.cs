@@ -30,24 +30,26 @@ public class Fundament : IFundament
         int b = 1;
         int c;
 
-        /* 
-        c = a + b
-        a = b
-        b = c
-        */
+        
+        c = a + b;
+        a = b;
+        b = c;
+        
     }
 
     public string ReverseString(string str)
     {
         // TODO: reverse the given string
-        return "";
+        char[] charArray = str.ToCharArray();
+        Array.Reverse(charArray);
+        return new string (charArray);
     }
 
     public int RecursiveFactorial(int n)
     {
         // Todo: Implement a recursive method(a method that calls itself within its own function scope)
         // To Check the factorial of a number(norsk: Fakultet) we look at n!, where n = n * 1 * 2 * 3...
-        if (n == 0)
+        if (n <= 1)
         {
             return 1;
         }
