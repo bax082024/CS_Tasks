@@ -20,6 +20,10 @@ class Program
         double result = fundament.SumTwoNumbersOfGivenType(7.5, 2.3);
         Console.WriteLine($"The result of SumTwoNumbersOfGivenType is: {result}");
 
+        fundament.CheckOddOrEven(7);
+
+        string fact = fundament.GetAInterestingFact("Bergen is surrounded by 7 mountains! and we dont like things like javascript!")
+
 
     }
 }
